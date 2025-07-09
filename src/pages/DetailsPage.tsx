@@ -29,7 +29,9 @@ export default function RepoDetailsPage() {
           await fetchRepos();
         }
       } catch (error) {
-        setError("Error fetching repository data. Please try again later."+error);
+        setError(
+          "Error fetching repository data. Please try again later." + error
+        );
       } finally {
         setLoading(false);
       }
@@ -85,7 +87,12 @@ export default function RepoDetailsPage() {
   }
 
   return (
-    <Box display="flex" flexDirection="column" alignItems="center" minHeight="80vh">
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      minHeight="80vh"
+    >
       <Box width="100%" textAlign="center" mb={2} mt={2}>
         <Button
           component={RouterLink}
@@ -93,12 +100,12 @@ export default function RepoDetailsPage() {
           variant="contained"
           startIcon={<ArrowBackIcon />}
           sx={{
-            backgroundColor: "#0b757a", 
-            color: "#ffffff", 
-            padding: "0.5rem 1rem", 
-            borderRadius: "8px", 
+            backgroundColor: "#0b757a",
+            color: "#ffffff",
+            padding: "0.5rem 1rem",
+            borderRadius: "8px",
             "&:hover": {
-              backgroundColor: "#095c5e", 
+              backgroundColor: "#095c5e",
             },
           }}
         >
@@ -117,10 +124,18 @@ export default function RepoDetailsPage() {
             <img
               src={repo.owner.avatar_url}
               alt={`${repo.owner.login}'s avatar`}
-              style={{ width: 50, height: 50, borderRadius: "50%", marginRight: 10 }}
+              style={{
+                width: 50,
+                height: 50,
+                borderRadius: "50%",
+                marginRight: 10,
+              }}
             />
             <Typography variant="body2">
-              Owner: <Link href={repo.owner.html_url} target="_blank">{repo.owner.login}</Link>
+              Owner:{" "}
+              <Link href={repo.owner.html_url} target="_blank">
+                {repo.owner.login}
+              </Link>
             </Typography>
           </Box>
           <Stack direction="row" spacing={1} sx={{ mb: 2 }}>
@@ -137,7 +152,10 @@ export default function RepoDetailsPage() {
           </Typography>
           {repo.license && (
             <Typography variant="body2" color="textSecondary" gutterBottom>
-              License: <Link href={repo.license.url} target="_blank">{repo.license.name}</Link>
+              License:{" "}
+              <Link href={repo.license.url} target="_blank">
+                {repo.license.name}
+              </Link>
             </Typography>
           )}
           {repo.archived && (
