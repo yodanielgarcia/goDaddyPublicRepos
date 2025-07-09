@@ -143,7 +143,7 @@ export default function HomePage() {
                   {paginatedRepos.map((repo) => (
                     <Tooltip key={repo.id} title="Click to see more details" arrow>
                       <TableRow
-                        onClick={() => window.location.href = `/repo/${repo.id}`} // Navegación al hacer clic
+                        onClick={() => window.location.href = `/repo/${repo.id}`}
                         sx={{
                           textDecoration: "none",
                           cursor: "pointer",

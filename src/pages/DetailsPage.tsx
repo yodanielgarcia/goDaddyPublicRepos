@@ -86,7 +86,6 @@ export default function RepoDetailsPage() {
 
   return (
     <Box display="flex" flexDirection="column" alignItems="center" minHeight="80vh">
-      {/* Botón Back to Home List centrado con estilos personalizados */}
       <Box width="100%" textAlign="center" mb={2} mt={2}>
         <Button
           component={RouterLink}
@@ -94,12 +93,12 @@ export default function RepoDetailsPage() {
           variant="contained"
           startIcon={<ArrowBackIcon />}
           sx={{
-            backgroundColor: "#0b757a", // Color de fondo
-            color: "#ffffff", // Color de texto
-            padding: "0.5rem 1rem", // Espaciado interno
-            borderRadius: "8px", // Bordes redondeados
+            backgroundColor: "#0b757a", 
+            color: "#ffffff", 
+            padding: "0.5rem 1rem", 
+            borderRadius: "8px", 
             "&:hover": {
-              backgroundColor: "#095c5e", // Color de fondo al pasar el mouse
+              backgroundColor: "#095c5e", 
             },
           }}
         >
