@@ -1,4 +1,14 @@
 {
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "target": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
