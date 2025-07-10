@@ -2,6 +2,17 @@
 
 This project is a web application that displays GoDaddy's public repositories using React, TypeScript, and Vite. The application includes features such as search, pagination, and repository details.
 
+## Screenshots
+
+### Home Page
+![Home Page](public/home.png "Home Page")
+
+### Search Feature
+![Search Feature](public/search.png "Search Feature")
+
+### Repository Details
+![Repository Details](public/detail.png "Repository Details")
+
 ## Installation
 
 1. Clone this repository:
@@ -68,9 +79,8 @@ src/
 
 ## Next Steps
 
-- **Improve Testing**: Add integration tests and cover edge cases.
-- **Performance Optimization**: Implement techniques like memoization to improve efficiency.
 - **Internationalization**: Add support for multiple languages.
+- **End2End**: Add support e2e with cypress or playwright.
 
 ## ESLint Configuration
 
