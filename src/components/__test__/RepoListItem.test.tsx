@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import RepoListItem from "../RepoListItem";
+import type { Repo } from "../../types/IListItems";
 
 describe("RepoListItem", () => {
   const mockRepo = {

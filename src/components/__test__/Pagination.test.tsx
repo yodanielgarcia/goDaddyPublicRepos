@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import CustomPagination from "../Pagination";
+import { vi } from "vitest";
 
 describe("CustomPagination", () => {
   it("renders the pagination component", () => {
