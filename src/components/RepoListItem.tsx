@@ -7,7 +7,7 @@ export default function RepoListItem({ repo }: RepoListItemProps) {
     <ListItem>
       <ListItemText
         primary={
-          <Link to={`/repo/${repo.name}`}>
+          <Link to={`/${repo.name}`}>
             {repo.name}
           </Link>
         }

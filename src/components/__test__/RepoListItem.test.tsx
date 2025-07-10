@@ -21,7 +21,7 @@ describe("RepoListItem", () => {
     renderWithRouter(<RepoListItem repo={mockRepo} />);
     const linkElement = screen.getByRole("link", { name: /example-repo/i });
     expect(linkElement).toBeInTheDocument();
-    expect(linkElement).toHaveAttribute("href", "/repo/example-repo");
+    expect(linkElement).toHaveAttribute("href", "/example-repo");
   });
 
   it("renders the repository description", () => {
