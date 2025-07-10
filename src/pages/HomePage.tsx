@@ -17,6 +17,7 @@ import { useRepoStore } from "../store/repoStore";
 import CustomPagination from "../components/Pagination";
 import SearchBar from "../components/SearchBar";
 import Tittle from "../components/Tittle";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
   const { repos, fetchRepos } = useRepoStore();
@@ -26,6 +27,8 @@ export default function HomePage() {
   const [searchTerm, setSearchTerm] = useState("");
   const reposPerPage = 8;
 
+  const navigate = useNavigate();
+  
   useEffect(() => {
     const loadRepos = async () => {
       try {
@@ -114,7 +117,7 @@ export default function HomePage() {
                     >
                       <TableRow
                         onClick={() =>
-                          (window.location.href = `/detail/${repo.id}`)
+                          navigate(`/detail/${repo.id}`)
                         }
                         sx={{
                           textDecoration: "none",
