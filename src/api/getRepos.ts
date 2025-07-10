@@ -3,14 +3,11 @@ import { EXTERNAL_ROUTES } from "../constants/EbackendRoutes";
 import type { Repo } from "../types/IListItems";
 
 export const getRepos = async (): Promise<Repo[]> => {
-  const requestConfig = {
-    method: "GET",
-  };
 
   const url = EXTERNAL_ROUTES.GET_REPOS;
 
   try {
-    const response = await axios.get(url, requestConfig);
+    const response = await axios.get(url);
     return response.data;
   } catch (error) {
     if (axios.isAxiosError(error)) {
