@@ -2,7 +2,13 @@
 
 This project is a web application that displays GoDaddy's public repositories using React, TypeScript, and Vite. The application includes features such as search, pagination, and repository details.
 
-## Screenshots
+## Desing created with IA
+
+To get a brief idea of ​​how to implement the UI, I used this AI -> https://app.visily.ai/ to create the mockup of how it could look.
+
+![desing Page](public/desing.png "desing Home Page")
+
+## Working App
 
 ### Home Page
 ![Home Page](public/home.png "Home Page")

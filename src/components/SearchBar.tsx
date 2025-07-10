@@ -8,7 +8,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ value, onChange }) => {
       label="Search Repositories"
       variant="outlined"
       fullWidth
-      sx={{ mb: 3 }}
+      sx={{ mb: 3 , top: 10}}
       value={value}
       onChange={onChange}
     />
