@@ -5,7 +5,7 @@ import NotFoundPage from "../pages/NotFoundPage";
 
 export default function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/goDaddyPublicRepos">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/detail/:id" element={<DetailsPage />} />
