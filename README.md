@@ -80,6 +80,7 @@ src/
 ## Next Steps
 
 - **Internationalization**: Add support for multiple languages.
+- **CI/CD**: Add Pipeline to add CI/CD and validate unit test in pipeline
 - **End2End**: Add support e2e with cypress or playwright.
 
 ## ESLint Configuration
