@@ -1,11 +1,6 @@
 import React from "react";
 import { Pagination } from "@mui/material";
-
-interface PaginationProps {
-  count: number;
-  page: number;
-  onChange: (event: React.ChangeEvent<unknown>, value: number) => void;
-}
+import type { PaginationProps } from "../types/IListItems";
 
 const CustomPagination: React.FC<PaginationProps> = ({ count, page, onChange }) => {
   return (

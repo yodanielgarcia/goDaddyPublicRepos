@@ -1,10 +1,6 @@
 import React from "react";
 import { TextField } from "@mui/material";
-
-interface SearchBarProps {
-  value: string;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}
+import type { SearchBarProps } from "../types/IListItems";
 
 const SearchBar: React.FC<SearchBarProps> = ({ value, onChange }) => {
   return (

@@ -43,3 +43,14 @@ export interface Repo {
 export interface RepoListItemProps {
   repo: Repo;
 }
+
+export interface PaginationProps {
+  count: number;
+  page: number;
+  onChange: (event: React.ChangeEvent<unknown>, value: number) => void;
+}
+
+export interface SearchBarProps {
+  value: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}

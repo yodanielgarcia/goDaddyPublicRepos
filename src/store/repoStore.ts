@@ -1,13 +1,6 @@
 import { create } from "zustand";
 import { getRepos } from "../api/getRepos";
-import type { Repo } from "../types/IListItems";
-
-
-interface RepoStoreState {
-  repos: Repo[];
-  setRepos: (repos: Repo[]) => void;
-  fetchRepos: () => Promise<void>;
-}
+import type { RepoStoreState } from "../types/IRepoStore";
 
 export const useRepoStore = create<RepoStoreState>((set) => ({
   repos: [],
