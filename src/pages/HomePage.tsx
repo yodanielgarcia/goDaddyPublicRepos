@@ -114,7 +114,7 @@ export default function HomePage() {
                     >
                       <TableRow
                         onClick={() =>
-                          (window.location.href = `/${repo.id}`)
+                          (window.location.href = `/detail/${repo.id}`)
                         }
                         sx={{
                           textDecoration: "none",

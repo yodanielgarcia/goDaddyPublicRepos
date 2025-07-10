@@ -8,7 +8,7 @@ export default function AppRouter() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/:id" element={<DetailsPage />} />
+        <Route path="/detail/:id" element={<DetailsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
